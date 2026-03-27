@@ -25,8 +25,8 @@ jobs:
       - name: Generate iOS project files
         run: flutter create --platforms=ios --org com.hojicooks --project-name myapp .
 
-        - name: Build iOS profile
-         run: flutter build ios --profile --no-codesign
+      - name: Build iOS profile
+        run: flutter build ios --profile --no-codesign
 
       - name: Create IPA
         run: |
